@@ -154,8 +154,8 @@ main {
 }
 
 #icon_ball {
-  width: 350px;
-  margin-top: -20px;
+  width: 350px; /* Controla el tamano del mundo   */
+  margin-top: -40px; /* Controla la posicion del mundo */
   position: relative;
   filter: drop-shadow(-40px 0px 30px rgba(0, 0, 0, 0.5));
 }
