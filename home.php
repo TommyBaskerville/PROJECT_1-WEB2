@@ -131,14 +131,14 @@ if (!isset($_SESSION['usuario'])) { // Si sesion no existe
         <div class="container__banner">
 
             <div class="banner">
-                <div class="banner__icon-ball">
-                    <img src="assets/images/earth.png" id="icon_ball" alt="">
+                <div class="banner__icon-world">
+                    <img src="assets/images/earth.png" id="icon_world" alt="">
                 </div>
-                <div class="banner__icon-player">
-                    <img src="assets/images/stadium.webp" id="icon_player" alt="">
+                <div class="banner__icon-hand">
+                    <img src="assets/images/hand.png" id="icon_hand" alt="">
                 </div>
                 <div class="banner__text">
-                    <h2>Toma el control de tu experiencia futbolística con nosotros.</h2>
+                    <h2>Únete a la lucha por un planeta sostenible con nosotros.</h2>
                     <a href="#">Leer más</a>
                 </div>
             </div>
