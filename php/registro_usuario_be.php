@@ -17,7 +17,7 @@
 
 <body>
     <?php
-            /* Aca guardo los valores de los campos del registro para su validacion*/
+            /* se guardan los valores de los campos del registro para su validacion*/
             /* Los datos se recibieron mediante el action que esta en el form del index.php */
             if (isset($_POST['nombre'])) {
                 $nombre = $_POST['nombre'];
