@@ -26,192 +26,55 @@ if (!isset($_SESSION['usuario'])) { // Si sesion no existe
     <link rel="stylesheet" href="../assets/css/style-home.css">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assets/css/style-home.css">
+    <link rel="stylesheet" href="../assets/css/style_carousen.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <style>
-        /* Estilos CSS para la sección de estadios */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f7f7f7;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-
-        .stadium-section {
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-    max-width: 100%;
-}
-
-.stadium-section h2 {
-    font-size: 24px;
-}
-
-.stadium-section h3 {
-    font-size: 20px;
-}
-
-.carousel-container {
-    position: relative;
-    max-width: 100%;
-}
-
-.carousel {
-    display: flex;
-    overflow: hidden;
-}
-
-.carousel-item {
-    flex: 0 0 100%;
-    text-align: center;
-    padding: 10px;
-}
-
-.carousel-item img {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #333;
-    border-radius: 8px;
-}
-
-/* Estilos para los botones del carrusel */
-.prev-button,
-.next-button {
-    background: #333;
-    color: #fff;
-    padding: 8px 16px;
-    border: none;
-    cursor: pointer;
-}
-
-/* Estilos para la descripción de los Estadioes */
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 5px;
-    padding: 10px;
-}
-
-/* Estilos para las imágenes en pantallas grandes */
-.carousel-item img {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #333;
-    border-radius: 8px;
-    width: 1000px; /* Tamaño fijo para pantallas grandes */
-}
-
-/* Media query para ajustar el tamaño en pantallas más pequeñas */
-@media (max-width: 768px) {
-    .carousel-item img {
-        width: 100%; /* Ajusta el tamaño al ancho de la pantalla en pantallas más pequeñas */
-    }
-    .carousel-caption{
-        display: none;
-    }
-}
-
-    /* Estilo para los carruseles */
-    .carousel-container {
-        max-width: 80%;
-        margin: 0 auto;
-    }
-    </style>
 
 </head>
 
 <body>
-    <script src="js/script-home.js"></script>
-    <header>
+<header>
 
-        <div class="container__header">
+<div class="container__header">
 
-            <div class="logo">
-                <a href="../home.php"><img src="../assets/images/Logos/logo-black.png" alt="Logo"></a>
-            </div>
+    <div class="logo">
+        <a href="../home.php"><img src="../assets/images/Logos/logo3.png" alt="Logo">
+    </div>
 
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li class="dropdown">
-                            <a>
-                                <div id="dropdown-btn1">
-                                    <a href="#"><span class="dropdown-name">Resultados</span></a>
-                                </div>
-                                <div class="dropdown-menu-box">
-                                    <ul class="dropdown-menu">
-                                        <a href="resultados_mx.php">
-                                            <li class="dropdown-item">Liga MX</li>
-                                        </a>
-                                        <a href="resultados_es.php">
-                                            <li class="dropdown-item">Liga Espanola</li>
-                                        </a>
-                                        <a href="resultados_en.php">
-                                            <li class="dropdown-item">Liga Inglesa</li>
-                                        </a>
-                                    </ul>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                            <a>
-                                <div id="dropdown-btn2">
-                                    <!-- MOMENTANEMAENTE CON RUTA HACIA UNA TABLA EN ESPECIFICO--->
-                                    <a href="#"><span class="dropdown-name">Posiciones</span></a>
-                                </div>
-                                <div class="dropdown-menu-box">
-                                    <ul class="dropdown-menu">
-                                        <a href="tabla_mx.php">
-                                            <li class="dropdown-item">Liga MX</li>
-                                        </a>
-                                        <a href="tabla_es.php">
-                                            <li class="dropdown-item">Liga Espanola</li>
-                                        </a>
-                                        <a href="tabla_en.php">
-                                            <li class="dropdown-item">Liga Inglesa</li>
-                                        </a>
-                                    </ul>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- INSERTAR LOS ESTADIOS MAS EMBLEMATICOS DEL MUNDO--->
-                        <li><a href="estadios.php">Estadios</a></li>
-                        <!-- INSERTAR LOS MEJORES EstadioES DE LA HISTORIA--->
-                        <li><a href="goats.php">GOATS</a></li>
-                    </ul>
-                </nav>
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="Impacto.php">Impacto ambiental</a></li>
+                <li><a href="Soluciones.php">Soluciones sostenibles</a></li>
+            </ul>
+        </nav>
 
 
-            </div>
-            <i class="fa-solid fa-bars" id="icon_menu"></i>
-            <div class="header__cerrar">
+    </div>
+    <i class="fa-solid fa-bars" id="icon_menu"></i>
+    <div class="header__cerrar">
 
-                <a href="cerrar_sesion.php" class="btn"><input type="button" class="btn__header-cerrar"
-                        value="Cerrar Sesion"></a>
-            </div>
-        </div>
+        <a href="../php/cerrar_sesion.php" class="btn"><input type="button" class="btn__header-cerrar" value="Cerrar Sesion"></a>
+    </div>
+</div>
 
-    </header>
+</header>
     <main>
     <main>
     <center><h2>Los Mejores Estadios de la Historia</h2></center>
-    <div class="stadium-section">
+    <div class="image-section">
     
     <h3>Estadio Azteca</h3>
-    <div id="stadium-carousel" class="carousel slide" data-ride="carousel">
+    <div id="image-carousel" class="carousel slide" data-ride="carousel">
         <!-- Indicador para las imagenes -->
         <ol class="carousel-indicators">
-            <li data-target="#stadium-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#stadium-carousel" data-slide-to="1"></li>
-            <li data-target="#stadium-carousel" data-slide-to="2"></li> 
-            <li data-target="#stadium-carousel" data-slide-to="3"></li>
-            <li data-target="#stadium-carousel" data-slide-to="4"></li>
+            <li data-target="#image-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#image-carousel" data-slide-to="1"></li>
+            <li data-target="#image-carousel" data-slide-to="2"></li> 
+            <li data-target="#image-carousel" data-slide-to="3"></li>
+            <li data-target="#image-carousel" data-slide-to="4"></li>
         </ol>
 
         <!-- Imágenes del carrusel -->
@@ -243,11 +106,11 @@ El Estadio Azteca es uno de los estadios más emblemáticos del mundo. Ha sido s
         </div>
 
         <!-- Controles del carrusel -->
-        <a class="carousel-control-prev" href="#stadium-carousel" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#image-carousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Anterior</span>
         </a>
-        <a class="carousel-control-next" href="#stadium-carousel" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#image-carousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Siguiente</span>
         </a>
@@ -255,16 +118,16 @@ El Estadio Azteca es uno de los estadios más emblemáticos del mundo. Ha sido s
 </div>
 
 
-<div class="stadium-section">
+<div class="image-section">
     <h3>Estadio de Maracaná</h3>
-    <div id="stadium-carousel-2" class="carousel slide" data-ride="carousel">
+    <div id="image-carousel-2" class="carousel slide" data-ride="carousel">
         <!-- Indicadores -->
         <ol class="carousel-indicators">
-            <li data-target="#stadium-carousel-2" data-slide-to="0" class="active"></li>
-            <li data-target="#stadium-carousel-2" data-slide-to="1"></li>
-            <li data-target="#stadium-carousel-2" data-slide-to="2"></li> 
-            <li data-target="#stadium-carousel-2" data-slide-to="3"></li>
-            <li data-target="#stadium-carousel-2" data-slide-to="4"></li>
+            <li data-target="#image-carousel-2" data-slide-to="0" class="active"></li>
+            <li data-target="#image-carousel-2" data-slide-to="1"></li>
+            <li data-target="#image-carousel-2" data-slide-to="2"></li> 
+            <li data-target="#image-carousel-2" data-slide-to="3"></li>
+            <li data-target="#image-carousel-2" data-slide-to="4"></li>
         </ol>
 
         <!-- Imágenes del carrusel para Estadio 2 -->
@@ -297,27 +160,27 @@ El Estadio Maracaná es uno de los estadios más emblemáticos del mundo. Ha sid
         </div>
 
         <!-- Controles del carrusel para Estadio 2 -->
-        <a class="carousel-control-prev" href="#stadium-carousel-2" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#image-carousel-2" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Anterior</span>
         </a>
-        <a class="carousel-control-next" href="#stadium-carousel-2" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#image-carousel-2" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Siguiente</span>
         </a>
     </div>
 </div>
 
-<div class="stadium-section">
+<div class="image-section">
     <h3>Estadio Camp Nou</h3>
-    <div id="stadium-carousel-3" class="carousel slide" data-ride="carousel">
+    <div id="image-carousel-3" class="carousel slide" data-ride="carousel">
         <!-- Indicadores -->
         <ol class="carousel-indicators">
-            <li data-target="#stadium-carousel-3" data-slide-to="0" class="active"></li>
-            <li data-target="#stadium-carousel-3" data-slide-to="1"></li>
-            <li data-target="#stadium-carousel-3" data-slide-to="2"></li> 
-            <li data-target="#stadium-carousel-3" data-slide-to="3"></li>
-            <li data-target="#stadium-carousel-3" data-slide-to="4"></li>
+            <li data-target="#image-carousel-3" data-slide-to="0" class="active"></li>
+            <li data-target="#image-carousel-3" data-slide-to="1"></li>
+            <li data-target="#image-carousel-3" data-slide-to="2"></li> 
+            <li data-target="#image-carousel-3" data-slide-to="3"></li>
+            <li data-target="#image-carousel-3" data-slide-to="4"></li>
         </ol>
 
         <!-- Imágenes del carrusel para Estadio 2 -->
@@ -346,27 +209,27 @@ El Estadio Maracaná es uno de los estadios más emblemáticos del mundo. Ha sid
         </div>
 
         <!-- Controles del carrusel para Estadio 2 -->
-        <a class="carousel-control-prev" href="#stadium-carousel-3" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#image-carousel-3" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Anterior</span>
         </a>
-        <a class="carousel-control-next" href="#stadium-carousel-3" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#image-carousel-3" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Siguiente</span>
         </a>
     </div>
 </div>
 
-<div class="stadium-section">
+<div class="image-section">
     <h3>Estadio Santiago Bernabéu</h3>
-    <div id="stadium-carousel-4" class="carousel slide" data-ride="carousel">
+    <div id="image-carousel-4" class="carousel slide" data-ride="carousel">
         <!-- Indicadores -->
         <ol class="carousel-indicators">
-            <li data-target="#stadium-carousel-4" data-slide-to="0" class="active"></li>
-            <li data-target="#stadium-carousel-4" data-slide-to="1"></li>
-            <li data-target="#stadium-carousel-4" data-slide-to="2"></li> 
-            <li data-target="#stadium-carousel-4" data-slide-to="3"></li>
-            <li data-target="#stadium-carousel-4" data-slide-to="4"></li>
+            <li data-target="#image-carousel-4" data-slide-to="0" class="active"></li>
+            <li data-target="#image-carousel-4" data-slide-to="1"></li>
+            <li data-target="#image-carousel-4" data-slide-to="2"></li> 
+            <li data-target="#image-carousel-4" data-slide-to="3"></li>
+            <li data-target="#image-carousel-4" data-slide-to="4"></li>
         </ol>
 
         <!-- Imágenes del carrusel para Estadio 2 -->
@@ -397,27 +260,27 @@ El estadio tiene capacidad para 81 044 espectadores y es uno de los estadios de 
         </div>
 
         <!-- Controles del carrusel para Estadio 2 -->
-        <a class="carousel-control-prev" href="#stadium-carousel-4" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#image-carousel-4" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Anterior</span>
         </a>
-        <a class="carousel-control-next" href="#stadium-carousel-4" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#image-carousel-4" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Siguiente</span>
         </a>
     </div>
 </div>
 
-<div class="stadium-section">
+<div class="image-section">
     <h3>Estadio Anfield</h3>
-    <div id="stadium-carousel-5" class="carousel slide" data-ride="carousel">
+    <div id="image-carousel-5" class="carousel slide" data-ride="carousel">
         <!-- Indicadores -->
         <ol class="carousel-indicators">
-            <li data-target="#stadium-carousel-5" data-slide-to="0" class="active"></li>
-            <li data-target="#stadium-carousel-5" data-slide-to="1"></li>
-            <li data-target="#stadium-carousel-5" data-slide-to="2"></li> 
-            <li data-target="#stadium-carousel-5" data-slide-to="3"></li>
-            <li data-target="#stadium-carousel-5" data-slide-to="4"></li>
+            <li data-target="#image-carousel-5" data-slide-to="0" class="active"></li>
+            <li data-target="#image-carousel-5" data-slide-to="1"></li>
+            <li data-target="#image-carousel-5" data-slide-to="2"></li> 
+            <li data-target="#image-carousel-5" data-slide-to="3"></li>
+            <li data-target="#image-carousel-5" data-slide-to="4"></li>
         </ol>
 
         <!-- Imágenes del carrusel para Estadio 2 -->
@@ -448,11 +311,11 @@ El estadio es conocido por su atmósfera eléctrica, que crea una experiencia de
         </div>
 
         <!-- Controles del carrusel para Estadio 2 -->
-        <a class="carousel-control-prev" href="#stadium-carousel-5" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#image-carousel-5" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Anterior</span>
         </a>
-        <a class="carousel-control-next" href="#stadium-carousel-5" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#image-carousel-5" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Siguiente</span>
         </a>

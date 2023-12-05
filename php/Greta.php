@@ -78,10 +78,10 @@ if (!isset($_SESSION['usuario'])) {
         </center>
 
         <div class="cover2">
-
             <div class="cardd">
                 <div class="personaje">
                     <div class="imagen_personaje"></div>
+                    <img src="../assets/images/Ban.jfif">
                     <div class="detalle">
                         <div class="titulo_trofeo">
                             <h3>movimiento global</h3>

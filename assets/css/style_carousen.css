@@ -1,0 +1,91 @@
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .image-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    max-width: 100%;
+}
+
+.image-section h2 {
+    font-size: 24px;
+}
+
+.image-section h3 {
+    font-size: 20px;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
+/* Estilos para los botones del carrusel */
+.prev-button,
+.next-button {
+    background: #333;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para la descripción del carrusel */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Estilos para las imágenes en pantallas grandes */
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 8px;
+    width: 1000px; /* Tamaño fijo para pantallas grandes */
+}
+
+/* Media query para ajustar el tamaño en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .carousel-item img {
+        width: 100%; /* Ajusta el tamaño al ancho de la pantalla en pantallas más pequeñas */
+    }
+    .carousel-caption{
+        display: none;
+    }
+}
+
+    /* Estilo para los carruseles */
+    .carousel-container {
+        max-width: 80%;
+        margin: 0 auto;
+    }
