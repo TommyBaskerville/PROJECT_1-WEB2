@@ -33,15 +33,13 @@ if (!isset($_SESSION['usuario'])) { // Si sesion no existe
 <div class="container__header">
 
     <div class="logo">
-        <img src="../assets/images/Logos/logo3.png" alt="Logo">
+        <a href="../home.php"><img src="../assets/images/Logos/logo3.png" alt="Logo">
     </div>
 
     <div class="menu">
         <nav>
             <ul>
-                <!-- INSERTAR LOS ESTADIOS MAS EMBLEMATICOS DEL MUNDO--->
                 <li><a href="Impacto.php">Impacto ambiental</a></li>
-                <!-- INSERTAR LOS MEJORES JUGADORES DE LA HISTORIA--->
                 <li><a href="Soluciones.php">Soluciones sostenibles</a></li>
             </ul>
         </nav>
@@ -252,27 +250,6 @@ if (!isset($_SESSION['usuario'])) { // Si sesion no existe
     <!-- js code -->
     <script src="/js/script-home.js"></script>
 
-
-
-
-    <!-- Animacion de JS para el menu deplegable en la Nav -->
-    <script>
-    let dropdown1 = document.querySelector('#dropdown-btn1').parentNode;
-    let dropdownBtn1 = document.getElementById('dropdown-btn1');
-
-    dropdownBtn1.addEventListener('click', () => {
-        dropdown1.classList.toggle('dropdown-active');
-    });
-    </script>
-
-    <script>
-    let dropdown2 = document.querySelector('#dropdown-btn2').parentNode;
-    let dropdownBtn2 = document.getElementById('dropdown-btn2');
-
-    dropdownBtn2.addEventListener('click', () => {
-        dropdown2.classList.toggle('dropdown-active');
-    });
-    </script>
 
 </body>
 

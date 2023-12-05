@@ -45,9 +45,7 @@ if (!isset($_SESSION['usuario'])) { // Si sesion no existe
             <div class="menu">
                 <nav>
                     <ul>
-                        <!-- INSERTAR LOS ESTADIOS MAS EMBLEMATICOS DEL MUNDO--->
                         <li><a href="php/Impacto.php">Impacto ambiental</a></li>
-                        <!-- INSERTAR LOS MEJORES JUGADORES DE LA HISTORIA--->
                         <li><a href="php/Soluciones.php">Soluciones sostenibles</a></li>
                     </ul>
                 </nav>
