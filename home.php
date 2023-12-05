@@ -69,7 +69,7 @@ $cards = [
 
 
             </div>
-            <i class="fa-solid fa-bars" id="icon_menu"></i>
+            
             <div class="header__cerrar">
 
                 <a href="php/cerrar_sesion.php" class="btn"><input type="button" class="btn__header-cerrar" value="Cerrar Sesion"></a>

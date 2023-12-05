@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['usuario'])) {
-    header("Location: index.php");
+    header("Location: ../index.php");
     session_destroy();
     exit();
 }
@@ -67,63 +67,11 @@ if (!isset($_SESSION['usuario'])) {
         </div>
 
 
-        <br>
-        <br>
-        <br>
-        <center>
-            <h2>Skill de Gavi</h2>
-        </center>
-
-
-
-
-        <div class="cover1">
-            <div class="containerSkill">
-                <div class="skill-box">
-                    <span class="title">ACELERACION</span>
-
-                    <div class="skill-bar">
-                        <span class="skill-per html">
-                            <span class="tooltipp">77%</span>
-                        </span>
-                    </div>
-                </div>
-
-                <div class="skill-box">
-                    <span class="title">FUERZA</span>
-
-                    <div class="skill-bar">
-                        <span class="skill-per css">
-                            <span class="tooltipp">58%</span>
-                        </span>
-                    </div>
-                </div>
-                <div class="skill-box">
-                    <span class="title">AGILIDAD</span>
-
-                    <div class="skill-bar">
-                        <span class="skill-per javascript">
-                            <span class="tooltipp">86%</span>
-                        </span>
-                    </div>
-                </div>
-                <div class="skill-box">
-                    <span class="title">SPRINT</span>
-
-                    <div class="skill-bar">
-                        <span class="skill-per nodejs">
-                            <span class="tooltipp">75%</span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
 
         <br>
         <br>
         <center>
-            <H2>Trofeos Ganados</H2>
+            <H2>Logros</H2>
         </center>
 
         <div class="cover2">
@@ -191,12 +139,7 @@ if (!isset($_SESSION['usuario'])) {
                 </div>
             </div>
 
-
         </div>
-
-
-
-
 
     </main>
 
