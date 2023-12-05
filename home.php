@@ -10,7 +10,6 @@ if (!isset($_SESSION['usuario'])) { // Si sesion no existe
     // header("location: index.php");
     session_destroy();
     die();
-
 }
 ?>
 
@@ -26,9 +25,9 @@ if (!isset($_SESSION['usuario'])) { // Si sesion no existe
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style-home.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
 
     </style>
@@ -40,7 +39,7 @@ if (!isset($_SESSION['usuario'])) { // Si sesion no existe
         <div class="container__header">
 
             <div class="logo">
-            <img src="assets/images/Logos/logo3.png" alt="Logo">
+                <img src="assets/images/Logos/logo3.png" alt="Logo">
             </div>
 
             <div class="menu">
@@ -99,8 +98,7 @@ if (!isset($_SESSION['usuario'])) { // Si sesion no existe
             <i class="fa-solid fa-bars" id="icon_menu"></i>
             <div class="header__cerrar">
 
-                <a href="php/cerrar_sesion.php" class="btn"><input type="button" class="btn__header-cerrar"
-                        value="Cerrar Sesion"></a>
+                <a href="php/cerrar_sesion.php" class="btn"><input type="button" class="btn__header-cerrar" value="Cerrar Sesion"></a>
             </div>
         </div>
 
@@ -112,7 +110,7 @@ if (!isset($_SESSION['usuario'])) { // Si sesion no existe
 
             <div class="text__information-cover">
                 <h1>¡Actúa ahora para salvar nuestro planeta!</h1>
-                
+
                 <p>Descubre cómo puedes marcar la diferencia en la lucha contra el cambio climático.</p>
 
                 <div class="buttons__cover">
@@ -122,7 +120,9 @@ if (!isset($_SESSION['usuario'])) { // Si sesion no existe
             </div>
 
             <div class="media__cover">
-            <div id="cont_e3674a9afd2a0e7cab4d19029edd230c"><script type="text/javascript" async src="https://www.meteored.mx/wid_loader/e3674a9afd2a0e7cab4d19029edd230c"></script></div>
+                <div id="cont_e3674a9afd2a0e7cab4d19029edd230c">
+                    <script type="text/javascript" async src="https://www.meteored.mx/wid_loader/e3674a9afd2a0e7cab4d19029edd230c"></script>
+                </div>
             </div>
 
 
@@ -142,8 +142,10 @@ if (!isset($_SESSION['usuario'])) { // Si sesion no existe
                     <a href="#">Leer más</a>
                 </div>
             </div>
-
+            <script src="https://climateclock.world/widget-v2.js" async></script>
+            <climate-clock />
         </div>
+
         <br>
         <br>
         <br>
@@ -180,7 +182,7 @@ if (!isset($_SESSION['usuario'])) { // Si sesion no existe
 
     </main>
 
-    
+
 
     <footer>
 
@@ -222,29 +224,29 @@ if (!isset($_SESSION['usuario'])) { // Si sesion no existe
     </footer>
 
 
-     <!-- js code -->
+    <!-- js code -->
     <script src="js/script-home.js"></script>
 
 
 
-   
+
     <!-- Animacion de JS para el menu deplegable en la Nav -->
     <script>
-    let dropdown1 = document.querySelector('#dropdown-btn1').parentNode;
-    let dropdownBtn1 = document.getElementById('dropdown-btn1');
+        let dropdown1 = document.querySelector('#dropdown-btn1').parentNode;
+        let dropdownBtn1 = document.getElementById('dropdown-btn1');
 
-    dropdownBtn1.addEventListener('click', () => {
-        dropdown1.classList.toggle('dropdown-active');
-    });
+        dropdownBtn1.addEventListener('click', () => {
+            dropdown1.classList.toggle('dropdown-active');
+        });
     </script>
 
     <script>
-    let dropdown2 = document.querySelector('#dropdown-btn2').parentNode;
-    let dropdownBtn2 = document.getElementById('dropdown-btn2');
+        let dropdown2 = document.querySelector('#dropdown-btn2').parentNode;
+        let dropdownBtn2 = document.getElementById('dropdown-btn2');
 
-    dropdownBtn2.addEventListener('click', () => {
-        dropdown2.classList.toggle('dropdown-active');
-    });
+        dropdownBtn2.addEventListener('click', () => {
+            dropdown2.classList.toggle('dropdown-active');
+        });
     </script>
 
 

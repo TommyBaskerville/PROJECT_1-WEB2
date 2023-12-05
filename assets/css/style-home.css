@@ -149,20 +149,21 @@ main {
 }
 
 .banner__icon-world {
-  width: 35%;
+  width: 50%; 
   height: 100%;
 }
 
 #icon_world {
-  width: 350px; /* Controla el tamano del mundo   */
-  margin-top: -40px; /* Controla la posicion del mundo */
-  position: relative;
+  width: 300px; /* Controla el tamano del mundo   */
+  margin-top: -45px; /* Controla la posicion del mundo */
+  position: relative; /* Controla la posicion del mundo */
   filter: drop-shadow(-40px 0px 30px rgba(0, 0, 0, 0.5));
 }
 
 .banner__text {
   width: 60%;
   position: relative;
+  left: -200px;
   padding: 40px;
 }
 
