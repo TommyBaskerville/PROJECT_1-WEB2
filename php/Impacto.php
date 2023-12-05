@@ -6,111 +6,72 @@ if (!isset($_SESSION['usuario'])) {
     exit();
 }
 ?>
+<?php
+$solutions = [
+    [
+        'name' => 'Energia solar',
+        'images' => [
+            '../assets/images/paneles1.jpg',
+            '../assets/images/paneles2.jpeg',
+            '../assets/images/paneles3.jpg',
+            '../assets/images/paneles4.jpg',
+        ],
+        'description' => 'Los paneles solares convierten la luz solar en electricidad mediante células fotovoltaicas.
+        Cuando la luz del sol golpea los paneles, los fotones en la luz mueven electrones en las células, generando corriente eléctrica continua.'
+    ],
+    [
+        'name' => 'Energia eolica',
+        'images' => [
+            '../assets/images/eolica1.jpg',
+            '../assets/images/eolica2.jpg',
+            '../assets/images/eolica3.webp',
+            '../assets/images/eolica4.webp',
+        ],
+        'description' => 'Las turbinas eólicas capturan la energía cinética del viento y la convierten en electricidad.
+        Las aspas de la turbina giran al ser impactadas por el viento, activando un generador que produce electricidad.'
+    ],
+    [
+        'name' => 'Transporte electrico',
+        'images' => [
+            '../assets/images/transporte1.jpg',
+            '../assets/images/transporte2.jpeg',
+            '../assets/images/transporte3.jpg',
+            '../assets/images/transporte4.jpeg',
+        ],
+        'description' => 'Vehículos eléctricos (EV) incluyen coches, autobuses y bicicletas eléctricas; funcionan con baterías recargables.
+        Cargarlos requiere infraestructura como estaciones de carga rápida y doméstica.
+        Reducción significativa de emisiones y dependencia de combustibles fósiles.'
+    ],
+    [
+        'name' => 'Reciclaje',
+        'images' => [
+            '../assets/images/reciclaje1.jpg',
+            '../assets/images/reciclaje2.jpg',
+            '../assets/images/reciclaje3.webp',
+            '../assets/images/reciclaje4.jpg',
+        ],
+        'description' => 'Reciclar reduce la cantidad de desechos enviados a vertederos, conservando recursos.
+        El compostaje convierte residuos orgánicos en fertilizantes naturales.'
+    ],
+];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Goats</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacto</title>
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assets/css/style-home.css">
+    <link rel="stylesheet" href="../assets/css/style_carousen.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
-
-    <style>
-.goats-section {
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-    max-width: 100%;
-}
-
-.goats-section h2 {
-    font-size: 24px;
-}
-
-.goats-section h3 {
-    font-size: 20px;
-}
-
-.carousel-container {
-    position: relative;
-    max-width: 100%;
-}
-
-.carousel {
-    display: flex;
-    overflow: hidden;
-}
-
-.carousel-item {
-    flex: 0 0 100%;
-    text-align: center;
-    padding: 10px;
-}
-
-.carousel-item img {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #333;
-    border-radius: 8px;
-}
-
-/* Estilos para los botones del carrusel */
-.prev-button,
-.next-button {
-    background: #333;
-    color: #fff;
-    padding: 8px 16px;
-    border: none;
-    cursor: pointer;
-}
-
-/* Estilos para la descripción de los jugadores */
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 5px;
-    padding: 10px;
-}
-
-
-/* Estilos para las imágenes en pantallas grandes */
-.carousel-item img {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #333;
-    border-radius: 8px;
-    width: 1000px; /* Tamaño fijo para pantallas grandes */
-
-}
-
-/* Media query para ajustar el tamaño en pantallas más pequeñas */
-@media (max-width: 768px) {
-    .carousel-item img {
-        width: 100%; /* Ajusta el tamaño al ancho de la pantalla en pantallas más pequeñas */
-    }
-    .carousel-caption{
-        display: none;
-    }
-}
-
-    /* Estilo para los carruseles */
-    .carousel-container {
-        max-width: 80%;
-        margin: 0 auto;
-    }
-
-    </style>    
 </head>
 
 <body>
@@ -141,270 +102,44 @@ if (!isset($_SESSION['usuario'])) {
 
 </header>
     <main>
-    <center><h2>Los Mejores Jugadores de la Historia</h2></center>
-    <div class="goats-section">
-    
-    <h3>Lionel Andrés Messi Cuccittini</h3>
-    <div id="player-carousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicador para las imagenes -->
-        <ol class="carousel-indicators">
-            <li data-target="#player-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#player-carousel" data-slide-to="1"></li>
-            <li data-target="#player-carousel" data-slide-to="2"></li> 
-            <li data-target="#player-carousel" data-slide-to="3"></li>
-            <li data-target="#player-carousel" data-slide-to="4"></li>
-        </ol>
+    <center><h2>Soluciones Sostenibles</h2></center>
+    <?php foreach ($solutions as $index => $stadium): ?>
+    <section class="image-section">
+        <h3><?= $stadium['name'] ?></h3>
+        <div id="image-carousel-<?= $index ?>" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <?php foreach ($stadium['images'] as $imageIndex => $image): ?>
+                    <li data-target="#image-carousel-<?= $index ?>" data-slide-to="<?= $imageIndex ?>" class="<?= $imageIndex === 0 ? 'active' : '' ?>"></li>
+                <?php endforeach; ?>
+            </ol>
 
-        <!-- Imágenes del carrusel -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="../assets/images/messi1.webp" alt="Jugador 1 - Imagen 1">
+            <!-- Carousel images -->
+            <div class="carousel-inner">
+                <?php foreach ($stadium['images'] as $imageIndex => $image): ?>
+                    <div class="carousel-item <?= $imageIndex === 0 ? 'active' : '' ?>">
+                        <img src="<?= $image ?>" alt="Estadio <?= $index ?> - Imagen <?= $imageIndex + 1 ?>">
+                    </div>
+                <?php endforeach; ?>
             </div>
-            <div class="carousel-item">
-                <img src="../assets/images/messi2.webp" alt="Jugador 1 - Imagen 2">
+
+            <!-- Carousel caption -->
+            <div class="carousel-caption">
+                <p><?= $stadium['description'] ?></p>
             </div>
-            <div class="carousel-item">
-                <img src="../assets/images/messi3.webp" alt="Jugador 1 - Imagen 3">
-            </div>
-            <div class="carousel-item">
-                <img src="../assets/images/messi4.webp" alt="Jugador 1 - Imagen 4">
-            </div>
-            <div class="carousel-item">
-                <img src="../assets/images/messi5.webp" alt="Jugador 1 - Imagen 4">
-            </div>
+
+            <!-- Carousel controls -->
+            <a class="carousel-control-prev" href="#image-carousel-<?= $index ?>" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#image-carousel-<?= $index ?>" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
         </div>
-
-        <!-- Carrusel Caption -->
-        <div class="carousel-caption">
-            <p style="background-color: black; border-radius: 5px; opacity: 0.8;">Messi es un poeta del fútbol, un artista que pinta con el balón. Su juego es fluido y elegante, como un tango. Es imposible predecir sus movimientos, es impredecible. Es un genio, un talento único..</p>
-        </div>
-
-        <!-- Controles del carrusel -->
-        <a class="carousel-control-prev" href="#player-carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#player-carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
-        </a>
-    </div>
-</div>
-
-
-<div class="goats-section">
-    <h3>Diego Armando Maradona Franco</h3>
-    <div id="player-carousel-2" class="carousel slide" data-ride="carousel">
-        <!-- Indicadores -->
-        <ol class="carousel-indicators">
-            <li data-target="#player-carousel-2" data-slide-to="0" class="active"></li>
-            <li data-target="#player-carousel-2" data-slide-to="1"></li>
-            <li data-target="#player-carousel-2" data-slide-to="2"></li> 
-            <li data-target="#player-carousel-2" data-slide-to="3"></li>
-            <li data-target="#player-carousel-2" data-slide-to="4"></li>
-        </ol>
-
-        <!-- Imágenes del carrusel para Jugador 2 -->
-        <div class="carousel-inner">
-        <div class="carousel-item active">
-                <img src="../assets/images/maradona1.webp" alt="Jugador 2 - Imagen 1">
-            </div>
-            <div class="carousel-item">
-                <img src="../assets/images/maradona2.webp" alt="Jugador 2 - Imagen 2">
-            </div>
-            <div class="carousel-item">
-                <img src="../assets/images/maradona3.webp" alt="Jugador 2 - Imagen 3">
-            </div>
-            <div class="carousel-item">
-                <img src="../assets/images/maradona4.webp" alt="Jugador 2 - Imagen 4">
-            </div>
-            <div class="carousel-item">
-                <img src="../assets/images/maradona5.webp" alt="Jugador 2 - Imagen 4">
-            </div>
-
-        </div>
-
-        <!-- Carrusel Caption para Jugador 2 -->
-        <div class="carousel-caption">
-        <p style="background-color: black; border-radius: 5px; opacity: 0.8;">Maradona, un dios del fútbol,
-con el balón en los pies,
-era una obra de arte en movimiento,
-un poema de amor al juego.</p>
-        </div>
-
-        <!-- Controles del carrusel para Jugador 2 -->
-        <a class="carousel-control-prev" href="#player-carousel-2" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#player-carousel-2" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
-        </a>
-    </div>
-</div>
-
-<div class="goats-section">
-    <h3>Cristiano Ronaldo dos Santos Aveiro</h3>
-    <div id="player-carousel-3" class="carousel slide" data-ride="carousel">
-        <!-- Indicadores -->
-        <ol class="carousel-indicators">
-            <li data-target="#player-carousel-3" data-slide-to="0" class="active"></li>
-            <li data-target="#player-carousel-3" data-slide-to="1"></li>
-            <li data-target="#player-carousel-3" data-slide-to="2"></li> 
-            <li data-target="#player-carousel-3" data-slide-to="3"></li>
-            <li data-target="#player-carousel-3" data-slide-to="4"></li>
-        </ol>
-
-        <!-- Imágenes del carrusel para Jugador 2 -->
-        <div class="carousel-inner">
-        <div class="carousel-item active">
-                <img src="../assets/images/cr72.webp" alt="Jugador 3 - Imagen 1">
-            </div>
-            <div class="carousel-item">
-                <img src="../assets/images/cr71.webp" alt="Jugador 3 - Imagen 2">
-            </div>
-            <div class="carousel-item">
-                <img src="../assets/images/cr73.webp" alt="Jugador 3 - Imagen 3">
-            </div>
-            <div class="carousel-item">
-                <img src="../assets/images/cr74.webp" alt="Jugador 3 - Imagen 4">
-            </div>
-            <div class="carousel-item">
-                <img src="../assets/images/cr75.webp" alt="Jugador 3 - Imagen 4">
-            </div>
-            <!-- Agrega más imágenes para Jugador 2 según sea necesario -->
-        </div>
-
-        <!-- Carrusel Caption para Jugador 2 -->
-        <div class="carousel-caption">
-        <p style="background-color: black; border-radius: 5px; opacity: 0.8;">Cristiano Ronaldo.
-        Un halcón sobre el campo,
-un cazador de goles,
-con la mirada fija en el arco,
-y la determinación en su corazón..</p>
-        </div>
-
-        <!-- Controles del carrusel para Jugador 2 -->
-        <a class="carousel-control-prev" href="#player-carousel-3" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#player-carousel-3" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
-        </a>
-    </div>
-</div>
-
-<div class="goats-section">
-    <h3>Edson Arantes do Nascimento</h3>
-    <div id="player-carousel-4" class="carousel slide" data-ride="carousel">
-        <!-- Indicadores -->
-        <ol class="carousel-indicators">
-            <li data-target="#player-carousel-4" data-slide-to="0" class="active"></li>
-            <li data-target="#player-carousel-4" data-slide-to="1"></li>
-            <li data-target="#player-carousel-4" data-slide-to="2"></li> 
-            <li data-target="#player-carousel-4" data-slide-to="3"></li>
-            <li data-target="#player-carousel-4" data-slide-to="4"></li>
-        </ol>
-
-        <!-- Imágenes del carrusel para Jugador 2 -->
-        <div class="carousel-inner">
-        <div class="carousel-item active">
-                <img src="../assets/images/pele2.webp" alt="Jugador 4 - Imagen 1">
-            </div>
-            <div class="carousel-item">
-                <img src="../assets/images/pele1.webp" alt="Jugador 4 - Imagen 2">
-            </div>
-            <div class="carousel-item">
-                <img src="../assets/images/pele3.webp" alt="Jugador 4 - Imagen 3">
-            </div>
-            <div class="carousel-item">
-                <img src="../assets/images/pele4.webp" alt="Jugador 4 - Imagen 4">
-            </div>
-            <div class="carousel-item">
-                <img src="../assets/images/pele5.webp" alt="Jugador 4 - Imagen 4">
-            </div>
-            <!-- Agrega más imágenes para Jugador 2 según sea necesario -->
-        </div>
-
-        <!-- Carrusel Caption para Jugador 2 -->
-        <div class="carousel-caption">
-        <p style="background-color: black; border-radius: 5px; opacity: 0.8;">Pelé, el rey del fútbol,
-un dios de la cancha,
-con el balón en sus pies,
-era una obra de arte en movimiento.</p>
-        </div>
-
-        <!-- Controles del carrusel para Jugador 2 -->
-        <a class="carousel-control-prev" href="#player-carousel-4" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#player-carousel-4" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
-        </a>
-    </div>
-</div>
-
-
-</main>
-
-
-    
-
-         <!-- js code -->
-     <script src="/js/script-home.js"></script>
-
-
-
-   
-    <!-- Animacion de JS para el menu deplegable en la Nav -->
-    <script>
-    let dropdown1 = document.querySelector('#dropdown-btn1').parentNode;
-    let dropdownBtn1 = document.getElementById('dropdown-btn1');
-
-    dropdownBtn1.addEventListener('click', () => {
-        dropdown1.classList.toggle('dropdown-active');
-    });
-    </script>
-
-    <script>
-    let dropdown2 = document.querySelector('#dropdown-btn2').parentNode;
-    let dropdownBtn2 = document.getElementById('dropdown-btn2');
-
-    dropdownBtn2.addEventListener('click', () => {
-        dropdown2.classList.toggle('dropdown-active');
-    });
-    </script>
-    <script>
-    const prevButton = document.querySelector('.prev-button');
-    const nextButton = document.querySelector('.next-button');
-    const carousel = document.querySelector('.carousel');
-    const carouselItems = document.querySelectorAll('.carousel-item');
-    let currentIndex = 0;
-
-    function updateCarousel() {
-        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
-
-    prevButton.addEventListener('click', () => {
-        if (currentIndex > 0) {
-            currentIndex--;
-            updateCarousel();
-        }
-    });
-
-    nextButton.addEventListener('click', () => {
-        if (currentIndex < carouselItems.length - 1) {
-            currentIndex++;
-            updateCarousel();
-        }
-    });
-</script>
-
+    </section>
+<?php endforeach; ?>
 
 </body>
 
