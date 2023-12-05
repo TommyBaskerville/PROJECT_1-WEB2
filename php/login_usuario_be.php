@@ -6,9 +6,9 @@
     <title>Login</title>
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.css">
     <!-- estilos para animar el Pop Up -->
-    <link rel="stylesheet" href="/assets/css/style_pop_up.css">
+    <link rel="stylesheet" href="../assets/css/style_pop_up.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     
