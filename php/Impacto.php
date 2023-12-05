@@ -25,7 +25,6 @@ if (!isset($_SESSION['usuario'])) {
 
 
     <style>
-        /* Estilos para la sección GOATS */
 .goats-section {
     text-align: center;
     padding: 20px;
@@ -115,76 +114,32 @@ if (!isset($_SESSION['usuario'])) {
 </head>
 
 <body>
-    <header>
+<header>
 
-        <div class="container__header">
+<div class="container__header">
 
-            <div class="logo">
-                <a href="../home.php"><img src="../assets/images/Logos/logo-black.png" alt="Logo"></a>
-            </div>
+    <div class="logo">
+        <a href="../home.php"><img src="../assets/images/Logos/logo3.png" alt="Logo">
+    </div>
 
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li class="dropdown">
-                            <a>
-                                <div id="dropdown-btn1">
-                                    <a href="#"><span class="dropdown-name">Resultados</span></a>
-                                </div>
-                                <div class="dropdown-menu-box">
-                                    <ul class="dropdown-menu">
-                                        <a href="resultados_mx.php">
-                                            <li class="dropdown-item">Liga MX</li>
-                                        </a>
-                                        <a href="resultados_es.php">
-                                            <li class="dropdown-item">Liga Espanola</li>
-                                        </a>
-                                        <a href="resultados_en.php">
-                                            <li class="dropdown-item">Liga Inglesa</li>
-                                        </a>
-                                    </ul>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                            <a>
-                                <div id="dropdown-btn2">
-                                    <!-- MOMENTANEMAENTE CON RUTA HACIA UNA TABLA EN ESPECIFICO--->
-                                    <a href="#"><span class="dropdown-name">Posiciones</span></a>
-                                </div>
-                                <div class="dropdown-menu-box">
-                                    <ul class="dropdown-menu">
-                                        <a href="tabla_mx.php">
-                                            <li class="dropdown-item">Liga MX</li>
-                                        </a>
-                                        <a href="tabla_es.php">
-                                            <li class="dropdown-item">Liga Espanola</li>
-                                        </a>
-                                        <a href="tabla_en.php">
-                                            <li class="dropdown-item">Liga Inglesa</li>
-                                        </a>
-                                    </ul>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- INSERTAR LOS ESTADIOS MAS EMBLEMATICOS DEL MUNDO--->
-                        <li><a href="estadios.php">Estadios</a></li>
-                        <!-- INSERTAR LOS MEJORES JUGADORES DE LA HISTORIA--->
-                        <li><a href="goats.php">GOATS</a></li>
-                    </ul>
-                </nav>
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="Impacto.php">Impacto ambiental</a></li>
+                <li><a href="Soluciones.php">Soluciones sostenibles</a></li>
+            </ul>
+        </nav>
 
 
-            </div>
-            <i class="fa-solid fa-bars" id="icon_menu"></i>
-            <div class="header__cerrar">
+    </div>
+    <i class="fa-solid fa-bars" id="icon_menu"></i>
+    <div class="header__cerrar">
 
-                <a href="cerrar_sesion.php" class="btn"><input type="button" class="btn__header-cerrar"
-                        value="Cerrar Sesion"></a>
-            </div>
-        </div>
+        <a href="../php/cerrar_sesion.php" class="btn"><input type="button" class="btn__header-cerrar" value="Cerrar Sesion"></a>
+    </div>
+</div>
 
-    </header>
+</header>
     <main>
     <center><h2>Los Mejores Jugadores de la Historia</h2></center>
     <div class="goats-section">
