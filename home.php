@@ -45,51 +45,10 @@ if (!isset($_SESSION['usuario'])) { // Si sesion no existe
             <div class="menu">
                 <nav>
                     <ul>
-                        <li class="dropdown">
-                            <a>
-                                <div id="dropdown-btn1">
-                                    <a href="#"><span class="dropdown-name">Resultados</span></a>
-                                </div>
-                                <div class="dropdown-menu-box">
-                                    <ul class="dropdown-menu">
-                                        <a href="php/resultados_mx.php">
-                                            <li class="dropdown-item">Liga MX</li>
-                                        </a>
-                                        <a href="php/resultados_es.php">
-                                            <li class="dropdown-item">Liga Espanola</li>
-                                        </a>
-                                        <a href="php/resultados_en.php">
-                                            <li class="dropdown-item">Liga Inglesa</li>
-                                        </a>
-                                    </ul>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                            <a>
-                                <div id="dropdown-btn2">
-                                    <!-- MOMENTANEMAENTE CON RUTA HACIA UNA TABLA EN ESPECIFICO--->
-                                    <a href="#"><span class="dropdown-name">Posiciones</span></a>
-                                </div>
-                                <div class="dropdown-menu-box">
-                                    <ul class="dropdown-menu">
-                                        <a href="php/tabla_mx.php">
-                                            <li class="dropdown-item">Liga MX</li>
-                                        </a>
-                                        <a href="php/tabla_es.php">
-                                            <li class="dropdown-item">Liga Espanola</li>
-                                        </a>
-                                        <a href="php/tabla_en.php">
-                                            <li class="dropdown-item">Liga Inglesa</li>
-                                        </a>
-                                    </ul>
-                                </div>
-                            </a>
-                        </li>
                         <!-- INSERTAR LOS ESTADIOS MAS EMBLEMATICOS DEL MUNDO--->
-                        <li><a href="php/estadios.php">Estadios</a></li>
+                        <li><a href="php/Impacto.php">Impacto ambiental</a></li>
                         <!-- INSERTAR LOS MEJORES JUGADORES DE LA HISTORIA--->
-                        <li><a href="php/goats.php">GOATS</a></li>
+                        <li><a href="php/Soluciones.php">Soluciones sostenibles</a></li>
                     </ul>
                 </nav>
 
@@ -150,34 +109,31 @@ if (!isset($_SESSION['usuario'])) { // Si sesion no existe
         <br>
         <br>
         <br>
-        <h1 class="title">Las mayores promesas del futbol</h1>
+        <h1 class="title">Descubre lideres en la lucha contra el cambio climatico</h1>
 
         <div class="container_card">
 
             <div class="card1">
-                <img src="assets/images/player1.webp">
-                <h4>Gavi</h4>
-                <p>Gavi es un jugador muy intenso y con mucho carácter, lo que le hace ser una pieza importante para el
-                    equipo en fase defensiva.</p>
-                <a href="php/Info_gavi.php">Leer más</a>
+                <img src="assets/images/Greta.jfif">
+                <h4>Greta Thunberg</h4>
+                <p>Joven activista sueca que ha inspirado a millones de personas a tomar medidas contra el cambio climático.</p>
+                <a href="php/Greta.php">Leer más</a>
             </div>
 
             <div class="card1">
-                <img src="assets/images/player22.webp">
-                <h4>Jude Bellingham</h4>
-                <p>Jugador muy versátil, capaz de jugar en varias posiciones del centro del campo. Tiene una gran
-                    calidad técnica, visión de juego y capacidad de asociación.</p>
-                <a href="php/Info_bellingham.php">Leer más</a>
+                <img src="assets/images/Al.jfif">
+                <h4>Al Gore</h4>
+                <p>Ex vicepresidente de los Estados Unidos y activista ambiental que ha ayudado a concienciar sobre el cambio climático.</p>
+                <a href="php/Al.php">Leer más</a>
             </div>
 
             <div class="card1">
-                <img src="assets/images/player3.webp">
-                <h4>Phil Foden</h4>
-                <p>Tiene una gran visión de juego, capacidad de pase y regate. También es un jugador muy habilidoso y
-                    con buen disparo.</p>
-                <a href="php/Info_foden.php">Leer más</a>
+                <img src="assets/images/Ban.jfif">
+                <h4>Ban Ki-moon</h4>
+                <p>Ex Secretario General de las Naciones Unidas que ha jugado un papel clave en la negociación de acuerdos internacionales sobre el cambio climático.</p>
+                <a href="php/Ban.php">Leer más</a>
             </div>
-
+ 
         </div>
 
     </main>
@@ -189,10 +145,10 @@ if (!isset($_SESSION['usuario'])) { // Si sesion no existe
         <div class="container__footer">
             <div class="box__footer">
                 <div class="logo">
-                    <img src="assets/images/Logos/logo-white.png" alt="Logo">
+                    <img src="assets/images/Logos/Logo4.png" alt="Logo">
                 </div>
                 <div class="terms">
-                    <p>Sitio web diseñado con pasión por +Futbol. © 2023 Todos los derechos reservados.</p>
+                    <p>Sitio web diseñado por WSTU. © 2023 Todos los derechos reservados.</p>
                 </div>
             </div>
             <div class="box__footer">
@@ -219,35 +175,13 @@ if (!isset($_SESSION['usuario'])) { // Si sesion no existe
 
         <div class="box__copyright">
             <hr>
-            <p>Todos los derechos reservados © 2023 <b>+Futbol</b></p>
+            <p>Todos los derechos reservados © 2023 <b>STWU</b></p>
         </div>
     </footer>
 
 
     <!-- js code -->
     <script src="js/script-home.js"></script>
-
-
-
-
-    <!-- Animacion de JS para el menu deplegable en la Nav -->
-    <script>
-        let dropdown1 = document.querySelector('#dropdown-btn1').parentNode;
-        let dropdownBtn1 = document.getElementById('dropdown-btn1');
-
-        dropdownBtn1.addEventListener('click', () => {
-            dropdown1.classList.toggle('dropdown-active');
-        });
-    </script>
-
-    <script>
-        let dropdown2 = document.querySelector('#dropdown-btn2').parentNode;
-        let dropdownBtn2 = document.getElementById('dropdown-btn2');
-
-        dropdownBtn2.addEventListener('click', () => {
-            dropdown2.classList.toggle('dropdown-active');
-        });
-    </script>
 
 
 
