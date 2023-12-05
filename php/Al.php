@@ -62,7 +62,7 @@ if (!isset($_SESSION['usuario'])) {
             <h1>Al Gore</h1>
         </center>
         <div class="cover1">
-            <img src="../assets/images/Al.jfif" class="img" id="image_gavi" alt="">
+            <img src="../assets/images/Al.jfif" class="img" id="image_Al" alt="">
 
             <br>
             <div class="rectangulo">
@@ -98,16 +98,16 @@ if (!isset($_SESSION['usuario'])) {
         <!-- Imágenes del carrusel -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../assets/images/Al1.jpg" alt="Estadio 1 - Imagen 1">
+                <img src="../assets/images/Al1.jpg" >
             </div>
             <div class="carousel-item">
-                <img src="../assets/images/Al2.jpg" alt="Estadio 1 - Imagen 2">
+                <img src="../assets/images/Al2.jpg" >
             </div>
             <div class="carousel-item">
-                <img src="../assets/images/Al3.webp" alt="Estadio 1 - Imagen 3">
+                <img src="../assets/images/Al3.webp" >
             </div>
             <div class="carousel-item">
-                <img src="../assets/images/Al4.jpg" alt="Estadio 1 - Imagen 4">
+                <img src="../assets/images/Al4.jpg" >
             </div>
         </div>
 

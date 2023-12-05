@@ -62,7 +62,7 @@ if (!isset($_SESSION['usuario'])) {
             <h1>Greta Thunberg</h1>
         </center>
         <div class="cover1">
-            <img src="../assets/images/Greta.jfif" class="img" id="image_gavi" alt="">
+            <img src="../assets/images/Greta.jfif" class="img" id="image_greta" alt="">
 
             <br>
             <div class="rectangulo">
@@ -98,16 +98,16 @@ if (!isset($_SESSION['usuario'])) {
         <!-- Imágenes del carrusel -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../assets/images/greta1.jfif" alt="Estadio 1 - Imagen 1">
+                <img src="../assets/images/greta1.jfif" >
             </div>
             <div class="carousel-item">
-                <img src="../assets/images/greta2.webp" alt="Estadio 1 - Imagen 2">
+                <img src="../assets/images/greta2.webp" >
             </div>
             <div class="carousel-item">
-                <img src="../assets/images/greta3.jpg" alt="Estadio 1 - Imagen 3">
+                <img src="../assets/images/greta3.jpg" >
             </div>
             <div class="carousel-item">
-                <img src="../assets/images/greta4.jfif" alt="Estadio 1 - Imagen 4">
+                <img src="../assets/images/greta4.jfif" >
             </div>
         </div>
 
