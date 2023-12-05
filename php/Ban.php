@@ -14,7 +14,7 @@ if (!isset($_SESSION['usuario'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greta</title>
+    <title>Ban</title>
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assets/css/style-person.css">
@@ -59,15 +59,15 @@ if (!isset($_SESSION['usuario'])) {
     <main>
         <br>
         <center>
-            <h1>Greta Thunberg</h1>
+            <h1>Ban Ki-moon</h1>
         </center>
         <div class="cover1">
-            <img src="../assets/images/Greta.jfif" class="img" id="image_gavi" alt="">
+            <img src="../assets/images/Ban.jfif" class="img" id="image_gavi" alt="">
 
             <br>
             <div class="rectangulo">
                 <p class="p">
-                Una joven activista sueca que se convirtió en una de las voces más prominentes en la lucha contra el cambio climático. Comenzó a protestar sola frente al parlamento sueco en 2018, y su movimiento "Escuela en huelga por el clima" se ha extendido por todo el mundo. Thunberg ha sido nominada al Premio Nobel de la Paz y ha sido elogiada por su coraje y determinación. 
+                Un diplomático surcoreano que se desempeñó como Secretario General de las Naciones Unidas de 2007 a 2016. Ban fue un defensor de la acción climática durante su mandato en la ONU y jugó un papel clave en la negociación del Acuerdo de París sobre el cambio climático en 2015. Ban ha sido elogiado por su liderazgo en la lucha contra el cambio climático.  
                </p>
             </div>
         </div>

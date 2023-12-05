@@ -59,15 +59,15 @@ if (!isset($_SESSION['usuario'])) {
     <main>
         <br>
         <center>
-            <h1>Greta Thunberg</h1>
+            <h1>Al Gore</h1>
         </center>
         <div class="cover1">
-            <img src="../assets/images/Greta.jfif" class="img" id="image_gavi" alt="">
+            <img src="../assets/images/Al.jfif" class="img" id="image_gavi" alt="">
 
             <br>
             <div class="rectangulo">
                 <p class="p">
-                Una joven activista sueca que se convirtió en una de las voces más prominentes en la lucha contra el cambio climático. Comenzó a protestar sola frente al parlamento sueco en 2018, y su movimiento "Escuela en huelga por el clima" se ha extendido por todo el mundo. Thunberg ha sido nominada al Premio Nobel de la Paz y ha sido elogiada por su coraje y determinación. 
+                Un político estadounidense y activista ambiental que fue el 45º vicepresidente de los Estados Unidos. Gore es un defensor de la acción climática desde hace mucho tiempo y ha producido una serie de documentales sobre el cambio climático, incluido el premio de la Academia "Una verdad incómoda". Gore ha sido galardonado con el Premio Nobel de la Paz por su trabajo en la concienciación sobre el cambio climático.  
                </p>
             </div>
         </div>
@@ -98,22 +98,22 @@ if (!isset($_SESSION['usuario'])) {
         <!-- Imágenes del carrusel -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../assets/images/greta1.jfif" alt="Estadio 1 - Imagen 1">
+                <img src="../assets/images/Al1.jpg" alt="Estadio 1 - Imagen 1">
             </div>
             <div class="carousel-item">
-                <img src="../assets/images/greta2.webp" alt="Estadio 1 - Imagen 2">
+                <img src="../assets/images/Al2.jpg" alt="Estadio 1 - Imagen 2">
             </div>
             <div class="carousel-item">
-                <img src="../assets/images/greta3.jpg" alt="Estadio 1 - Imagen 3">
+                <img src="../assets/images/Al3.webp" alt="Estadio 1 - Imagen 3">
             </div>
             <div class="carousel-item">
-                <img src="../assets/images/greta4.jfif" alt="Estadio 1 - Imagen 4">
+                <img src="../assets/images/Al4.jpg" alt="Estadio 1 - Imagen 4">
             </div>
         </div>
 
         <!-- Carrusel Caption -->
         <div class="carousel-caption">
-            <p style="background-color: black; border-radius: 5px; opacity: 0.8;">Thunberg inspiró a millones de personas en todo el mundo a tomar medidas contra el cambio climático. Su movimiento "Escuela en huelga por el clima" ha llevado a protestas en todo el mundo, y ha inspirado a los jóvenes a participar en la política.</p>
+            <p style="background-color: black; border-radius: 5px; opacity: 0.8;">Gore jugó un papel clave en la negociación del Protocolo de Kyoto, un acuerdo internacional para reducir las emisiones de gases de efecto invernadero. El Protocolo de Kyoto es considerado un hito en la lucha contra el cambio climático.</p>
         </div>
 
         <!-- Controles del carrusel -->
