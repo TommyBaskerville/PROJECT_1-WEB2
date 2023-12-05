@@ -7,52 +7,35 @@ if (!isset($_SESSION['usuario'])) {
 }
 ?>
 <?php
-$solutions = [
+$impact = [
     [
-        'name' => 'Energia solar',
+        'name' => 'Elevacion de temperaturas',
         'images' => [
-            '../assets/images/paneles1.jpg',
-            '../assets/images/paneles2.jpeg',
-            '../assets/images/paneles3.jpg',
-            '../assets/images/paneles4.jpg',
+            '../assets/images/temperatura2.webp',
+            '../assets/images/temperatura1.jpeg',
+            '../assets/images/temperatura3.webp',
         ],
-        'description' => 'Los paneles solares convierten la luz solar en electricidad mediante células fotovoltaicas.
-        Cuando la luz del sol golpea los paneles, los fotones en la luz mueven electrones en las células, generando corriente eléctrica continua.'
+        'description' => 'A medida que se eleva la concentración de gases de efecto invernadero, también lo hace la temperatura de la superficie del planeta. En la última década, del 2011 al 2020, se ha registrado el mayor calentamiento hasta la fecha. Desde los años 80, cada década ha sido más cálida que la anterior. En casi todas las zonas se han producido más olas de calor y días más calurosos. La elevación de las temperaturas provoca un aumento en las enfermedades relacionadas con el calor y hace que trabajar en exteriores sea más difícil. Se producen incendios incontrolados con mayor facilidad y se extienden más rápidamente cuando el ambiente es más cálido. Las temperaturas del Ártico se han elevado al menos el doble de rápido que la media mundial.'
     ],
     [
-        'name' => 'Energia eolica',
+        'name' => 'Desaparicion de especies',
         'images' => [
-            '../assets/images/eolica1.jpg',
-            '../assets/images/eolica2.jpg',
-            '../assets/images/eolica3.webp',
-            '../assets/images/eolica4.webp',
+            '../assets/images/especies1.jpg',
+            '../assets/images/especies2.jpg',
+            '../assets/images/especies3.jpg',
         ],
-        'description' => 'Las turbinas eólicas capturan la energía cinética del viento y la convierten en electricidad.
-        Las aspas de la turbina giran al ser impactadas por el viento, activando un generador que produce electricidad.'
+        'description' => 'El cambio climático pone en riesgo la supervivencia de las especies terrestres y oceánicas. Estos riesgos aumentan a medida que ascienden las temperaturas. Debido a la potencia del cambio climático exacerbado, en el mundo se extinguen especies a un ritmo 1000 veces mayor que en cualquier otra época de la que se tenga constancia en la historia humana. Un millón de especies están en riesgo de extinguirse en las próximas décadas. Los incendios forestales, un clima extremo y la invasión de plagas con la aparición de enfermedades, todo esto está entre las amenazas relacionadas con el cambio climático. Algunas especies serán capaces de adaptarse geográficamente, pero otras, no.'
     ],
     [
-        'name' => 'Transporte electrico',
+        'name' => 'Aumento del nivel del mar',
         'images' => [
-            '../assets/images/transporte1.jpg',
-            '../assets/images/transporte2.jpeg',
-            '../assets/images/transporte3.jpg',
-            '../assets/images/transporte4.jpeg',
+            '../assets/images/mar1.jpg',
+            '../assets/images/mar2.jpg',
+            '../assets/images/mar3.jpg',
         ],
-        'description' => 'Vehículos eléctricos (EV) incluyen coches, autobuses y bicicletas eléctricas; funcionan con baterías recargables.
-        Cargarlos requiere infraestructura como estaciones de carga rápida y doméstica.
-        Reducción significativa de emisiones y dependencia de combustibles fósiles.'
+        'description' => 'VEl océano absorbe la mayor parte del calor generado por el calentamiento global. El ritmo al que se ha elevado el calentamiento del océano ha aumentado considerablemente durante las últimas dos décadas a todas las profundidades. A medida que se calienta el océano, su volumen aumenta porque el agua se expande. El deshielo de las placas de hielo y los icebergs hace que se eleve el nivel del mar amenazando a las comunidades litorales e insulares. Además, el océano absorbe dióxido de carbono y evita su acumulación en la atmósfera. Pero un mayor contenido de dióxido de carbono hace que el océano se acidifique más, lo que pone en peligro tanto a las especies marinas como a los arrecifes de coral.'
     ],
-    [
-        'name' => 'Reciclaje',
-        'images' => [
-            '../assets/images/reciclaje1.jpg',
-            '../assets/images/reciclaje2.jpg',
-            '../assets/images/reciclaje3.webp',
-            '../assets/images/reciclaje4.jpg',
-        ],
-        'description' => 'Reciclar reduce la cantidad de desechos enviados a vertederos, conservando recursos.
-        El compostaje convierte residuos orgánicos en fertilizantes naturales.'
-    ],
+    
 ];
 ?>
 <!DOCTYPE html>
@@ -103,7 +86,7 @@ $solutions = [
 </header>
     <main>
     <center><h2>Soluciones Sostenibles</h2></center>
-    <?php foreach ($solutions as $index => $stadium): ?>
+    <?php foreach ($impact as $index => $stadium): ?>
     <section class="image-section">
         <h3><?= $stadium['name'] ?></h3>
         <div id="image-carousel-<?= $index ?>" class="carousel slide" data-ride="carousel">
