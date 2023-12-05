@@ -149,7 +149,7 @@
 
     main {
         max-width: 1200px;
-        height: calc(100vh + 800px);
+        height: calc(100vh + 300px);
         padding: 40px;
         margin: auto;
         justify-content: center;
@@ -193,7 +193,7 @@
         text-align: justify;
         padding: 20px;
     }
-    
+
     @keyframes progress {
         0% {
             width: 0;
