@@ -6,7 +6,7 @@ if (!isset($_SESSION['usuario'])) {
     exit();
 }
 ?>
-/*Creacion de cards con php*/
+
 <?php
 $cards = [
     [

@@ -43,7 +43,7 @@ if (!isset($_SESSION['usuario'])) {
     <i class="fa-solid fa-bars" id="icon_menu"></i>
     <div class="header__cerrar">
 
-        <a href="php/cerrar_sesion.php" class="btn"><input type="button" class="btn__header-cerrar" value="Cerrar Sesion"></a>
+        <a href="../php/cerrar_sesion.php" class="btn"><input type="button" class="btn__header-cerrar" value="Cerrar Sesion"></a>
     </div>
 </div>
 
@@ -73,27 +73,21 @@ if (!isset($_SESSION['usuario'])) {
         <br>
         <br>
         <br>
-        <br>
         <center>
             <H2>Logros</H2>
         </center>
 
         <div class="cover2">
 
-
             <div class="cardd">
                 <div class="personaje">
                     <div class="imagen_personaje"></div>
                     <div class="detalle">
                         <div class="titulo_trofeo">
-                            <h3>LaLiga</h3>
+                            <h3>movimiento global</h3>
                         </div>
                         <div class="parrafo_trofeo">
-                            <p>El FC Barcelona ganó la Liga española 2023-24, su primer título de liga en tres años. Gavi,
-                                un centrocampista ofensivo de
-                                18 años, fue un jugador clave del equipo, disputando 33 partidos de liga, 29 de ellos como
-                                titular. Gavi anotó dos goles
-                                y dio cuatro asistencias en la liga..</p>
+                            <p>Thunberg inspiró a millones de personas en todo el mundo a tomar medidas contra el cambio climático. Su movimiento "Escuela en huelga por el clima" ha llevado a protestas en todo el mundo, y ha inspirado a los jóvenes a participar en la política.</p>
                         </div>
 
 
