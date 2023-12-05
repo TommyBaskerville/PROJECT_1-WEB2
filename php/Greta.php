@@ -18,7 +18,6 @@ if (!isset($_SESSION['usuario'])) {
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assets/css/style-person.css">
-    <link rel="stylesheet" href="../assets/css/style-carousen.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/style-home.css">
     <link rel="stylesheet" href="../assets/css/style_carousen.css">
