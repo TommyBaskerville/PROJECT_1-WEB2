@@ -7,18 +7,52 @@ if (!isset($_SESSION['usuario'])) {
 }
 ?>
 <?php
-$stadiums = [
+$solutions = [
     [
-        'name' => 'Estadio Santiago Bernabéu',
+        'name' => 'Energia solar',
         'images' => [
-            '../assets/images/bernabeu5.webp',
-            '../assets/images/Bernabeu.webp',
-            '../assets/images/bernabeu3.webp',
-            '../assets/images/bernabeu4.webp',
+            '../assets/images/paneles1.jpg',
+            '../assets/images/paneles2.jpeg',
+            '../assets/images/paneles3.jpg',
+            '../assets/images/paneles4.jpg',
         ],
-        'description' => 'El Camp Nou, ubicado en Barcelona, es uno de los estadios más icónicos del mundo. Es el hogar del FC Barcelona y ha sido testigo de innumerables momentos históricos en el fútbol. Con una capacidad para más de 99,000 espectadores, el Camp Nou es un coloso que rezuma pasión y tradición. Su arquitectura emblemática combina una estructura modernista con instalaciones de última generación.'
+        'description' => 'Los paneles solares convierten la luz solar en electricidad mediante células fotovoltaicas.
+        Cuando la luz del sol golpea los paneles, los fotones en la luz mueven electrones en las células, generando corriente eléctrica continua.'
     ],
-    // add more stadiums if necessary
+    [
+        'name' => 'Energia eolica',
+        'images' => [
+            '../assets/images/eolica1.jpg',
+            '../assets/images/eolica2.jpg',
+            '../assets/images/eolica3.webp',
+            '../assets/images/eolica4.webp',
+        ],
+        'description' => 'Las turbinas eólicas capturan la energía cinética del viento y la convierten en electricidad.
+        Las aspas de la turbina giran al ser impactadas por el viento, activando un generador que produce electricidad.'
+    ],
+    [
+        'name' => 'Transporte electrico',
+        'images' => [
+            '../assets/images/transporte1.jpg',
+            '../assets/images/transporte2.jpeg',
+            '../assets/images/transporte3.jpg',
+            '../assets/images/transporte4.jpeg',
+        ],
+        'description' => 'Vehículos eléctricos (EV) incluyen coches, autobuses y bicicletas eléctricas; funcionan con baterías recargables.
+        Cargarlos requiere infraestructura como estaciones de carga rápida y doméstica.
+        Reducción significativa de emisiones y dependencia de combustibles fósiles.'
+    ],
+    [
+        'name' => 'Reciclaje',
+        'images' => [
+            '../assets/images/reciclaje1.jpg',
+            '../assets/images/reciclaje2.jpg',
+            '../assets/images/reciclaje3.webp',
+            '../assets/images/reciclaje4.jpg',
+        ],
+        'description' => 'Reciclar reduce la cantidad de desechos enviados a vertederos, conservando recursos.
+        El compostaje convierte residuos orgánicos en fertilizantes naturales.'
+    ],
 ];
 ?>
 <!DOCTYPE html>
@@ -69,7 +103,7 @@ $stadiums = [
 </header>
     <main>
     <center><h2>Soluciones Sostenibles</h2></center>
-    <?php foreach ($stadiums as $index => $stadium): ?>
+    <?php foreach ($solutions as $index => $stadium): ?>
     <section class="image-section">
         <h3><?= $stadium['name'] ?></h3>
         <div id="image-carousel-<?= $index ?>" class="carousel slide" data-ride="carousel">
@@ -106,36 +140,6 @@ $stadiums = [
         </div>
     </section>
 <?php endforeach; ?>
-
-
-</main>
-
-    </main>
-  
-     <!-- js code -->
-     <script src="/js/script-home.js"></script>
-
-
-
-   
-    <!-- Animacion de JS para el menu deplegable en la Nav -->
-    <script>
-    let dropdown1 = document.querySelector('#dropdown-btn1').parentNode;
-    let dropdownBtn1 = document.getElementById('dropdown-btn1');
-
-    dropdownBtn1.addEventListener('click', () => {
-        dropdown1.classList.toggle('dropdown-active');
-    });
-    </script>
-
-    <script>
-    let dropdown2 = document.querySelector('#dropdown-btn2').parentNode;
-    let dropdownBtn2 = document.getElementById('dropdown-btn2');
-
-    dropdownBtn2.addEventListener('click', () => {
-        dropdown2.classList.toggle('dropdown-active');
-    });
-    </script>
 
 </body>
 
