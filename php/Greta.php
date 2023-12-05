@@ -18,7 +18,13 @@ if (!isset($_SESSION['usuario'])) {
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assets/css/style-greta.css">
+    <link rel="stylesheet" href="../assets/css/style-carousen.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style-home.css">
+    <link rel="stylesheet" href="../assets/css/style_carousen.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -74,70 +80,53 @@ if (!isset($_SESSION['usuario'])) {
         <br>
         <br>
         <center>
-            <H2>Logros</H2>
+            <H2>Logro</H2>
         </center>
+        <div class="image-section">
+    
+    <h3></h3>
+    <div id="image-carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicador para las imagenes -->
+        <ol class="carousel-indicators">
+            <li data-target="#image-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#image-carousel" data-slide-to="1"></li>
+            <li data-target="#image-carousel" data-slide-to="2"></li> 
+            <li data-target="#image-carousel" data-slide-to="3"></li>
+            <li data-target="#image-carousel" data-slide-to="4"></li>
+        </ol>
 
-        <div class="cover2">
-            <div class="cardd">
-                <div class="personaje">
-                    <div class="imagen_personaje"></div>
-                    <img src="../assets/images/Ban.jfif">
-                    <div class="detalle">
-                        <div class="titulo_trofeo">
-                            <h3>movimiento global</h3>
-                        </div>
-                        <div class="parrafo_trofeo">
-                            <p>Thunberg inspiró a millones de personas en todo el mundo a tomar medidas contra el cambio climático. Su movimiento "Escuela en huelga por el clima" ha llevado a protestas en todo el mundo, y ha inspirado a los jóvenes a participar en la política.</p>
-                        </div>
-
-
-                    </div>
-                </div>
+        <!-- Imágenes del carrusel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../assets/images/greta1.jfif" alt="Estadio 1 - Imagen 1">
             </div>
-
-            <div class="cardd">
-                <div class="personaje_2">
-                    <div class="imagen_personaje_2"></div>
-                    <div class="detalle_2">
-                        <div class="titulo_trofeo">
-                            <h3>Spanish Super Cup</h3>
-                        </div>
-
-                        <div class="parrafo_trofeo">
-                            <p>El FC Barcelona ganó la Supercopa de España 2023, su primer título en este torneo desde
-                                2018.
-                                Gavi, un centrocampista ofensivo
-                                de 17 años, fue un jugador clave del equipo, disputando 4 partidos, 3 de ellos como
-                                titular.
-                                Gavi anotó un gol y dio
-                                una asistencia en la Supercopa.</p>
-                        </div>
-
-
-                    </div>
-                </div>
+            <div class="carousel-item">
+                <img src="../assets/images/greta2.webp" alt="Estadio 1 - Imagen 2">
             </div>
-
-            <div class="cardd">
-                <div class="personaje_3">
-                    <div class="imagen_personaje_3"></div>
-                    <div class="detalle_3">
-                        <div class="titulo_trofeo">
-                            <h3>Golden Boy</h3>
-                        </div>
-                        <div class="parrafo_trofeo">
-                            <p>
-                                Gavi ganó el Premio Golden Boy 2022, que reconoce al mejor jugador joven del mundo. El
-                                centrocampista ofensivo del FC Barcelona, ​​entonces de 17 años,
-                                fue elegido por un jurado de periodistas deportivos de todo el mundo.</p>
-                        </div>
-
-
-                    </div>
-                </div>
+            <div class="carousel-item">
+                <img src="../assets/images/greta3.jpg" alt="Estadio 1 - Imagen 3">
             </div>
-
+            <div class="carousel-item">
+                <img src="../assets/images/greta4.jfif" alt="Estadio 1 - Imagen 4">
+            </div>
         </div>
+
+        <!-- Carrusel Caption -->
+        <div class="carousel-caption">
+            <p style="background-color: black; border-radius: 5px; opacity: 0.8;">Thunberg inspiró a millones de personas en todo el mundo a tomar medidas contra el cambio climático. Su movimiento "Escuela en huelga por el clima" ha llevado a protestas en todo el mundo, y ha inspirado a los jóvenes a participar en la política.</p>
+        </div>
+
+        <!-- Controles del carrusel -->
+        <a class="carousel-control-prev" href="#image-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#image-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+</div>
 
     </main>
 
