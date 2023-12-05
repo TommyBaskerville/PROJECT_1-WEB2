@@ -13,6 +13,29 @@ if (!isset($_SESSION['usuario'])) { // Si sesion no existe
 }
 ?>
 
+<?php
+$cards = [
+    [
+        'image' => 'assets/images/Greta.jfif',
+        'name' => 'Greta Thunberg',
+        'description' => 'Joven activista sueca que ha inspirado a millones de personas a tomar medidas contra el cambio climático.',
+        'link' => 'php/Greta.php'
+    ],
+    [
+        'image' => 'assets/images/Al.jfif',
+        'name' => 'Al Gore',
+        'description' => 'Ex vicepresidente de los Estados Unidos y activista ambiental que ha ayudado a concienciar sobre el cambio climático.',
+        'link' => 'php/Al.php'
+    ],
+    [
+        'image' => 'assets/images/Ban.jfif',
+        'name' => 'Ban Ki-moon',
+        'description' => 'Ex Secretario General de las Naciones Unidas que ha jugado un papel clave en la negociación de acuerdos internacionales sobre el cambio climático.',
+        'link' => 'php/Ban.php'
+    ]
+];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -107,32 +130,20 @@ if (!isset($_SESSION['usuario'])) { // Si sesion no existe
         <br>
         <br>
         <br>
+        <br>
+        <br>
         <h1 class="title">Descubre lideres en la lucha contra el cambio climatico</h1>
 
         <div class="container_card">
-
-            <div class="card1">
-                <img src="assets/images/Greta.jfif">
-                <h4>Greta Thunberg</h4>
-                <p>Joven activista sueca que ha inspirado a millones de personas a tomar medidas contra el cambio climático.</p>
-                <a href="php/Greta.php">Leer más</a>
-            </div>
-
-            <div class="card1">
-                <img src="assets/images/Al.jfif">
-                <h4>Al Gore</h4>
-                <p>Ex vicepresidente de los Estados Unidos y activista ambiental que ha ayudado a concienciar sobre el cambio climático.</p>
-                <a href="php/Al.php">Leer más</a>
-            </div>
-
-            <div class="card1">
-                <img src="assets/images/Ban.jfif">
-                <h4>Ban Ki-moon</h4>
-                <p>Ex Secretario General de las Naciones Unidas que ha jugado un papel clave en la negociación de acuerdos internacionales sobre el cambio climático.</p>
-                <a href="php/Ban.php">Leer más</a>
-            </div>
- 
+    <?php foreach ($cards as $card): ?>
+        <div class="card1">
+            <img src="<?= $card['image'] ?>">
+            <h4><?= $card['name'] ?></h4>
+            <p><?= $card['description'] ?></p>
+            <a href="<?= $card['link'] ?>">Leer más</a>
         </div>
+    <?php endforeach; ?>
+</div>
 
     </main>
 
@@ -176,19 +187,6 @@ if (!isset($_SESSION['usuario'])) { // Si sesion no existe
             <p>Todos los derechos reservados © 2023 <b>STWU</b></p>
         </div>
     </footer>
-
-
-    <!-- js code -->
-    <script src="js/script-home.js"></script>
-
-
-
-
-
-
-
-
-
 
 </body>
 
