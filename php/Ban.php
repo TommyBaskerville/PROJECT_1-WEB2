@@ -98,22 +98,22 @@ if (!isset($_SESSION['usuario'])) {
         <!-- Imágenes del carrusel -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../assets/images/greta1.jfif" alt="Estadio 1 - Imagen 1">
+                <img src="../assets/images/Ban1.jpg" alt="Estadio 1 - Imagen 1">
             </div>
             <div class="carousel-item">
-                <img src="../assets/images/greta2.webp" alt="Estadio 1 - Imagen 2">
+                <img src="../assets/images/Ban2.webp" alt="Estadio 1 - Imagen 2">
             </div>
             <div class="carousel-item">
-                <img src="../assets/images/greta3.jpg" alt="Estadio 1 - Imagen 3">
+                <img src="../assets/images/Ban3.jpg" alt="Estadio 1 - Imagen 3">
             </div>
             <div class="carousel-item">
-                <img src="../assets/images/greta4.jfif" alt="Estadio 1 - Imagen 4">
+                <img src="../assets/images/Ban4.jpg" alt="Estadio 1 - Imagen 4">
             </div>
         </div>
 
         <!-- Carrusel Caption -->
         <div class="carousel-caption">
-            <p style="background-color: black; border-radius: 5px; opacity: 0.8;">Thunberg inspiró a millones de personas en todo el mundo a tomar medidas contra el cambio climático. Su movimiento "Escuela en huelga por el clima" ha llevado a protestas en todo el mundo, y ha inspirado a los jóvenes a participar en la política.</p>
+            <p style="background-color: black; border-radius: 5px; opacity: 0.8;">Ban Ki-moon fue un defensor vocal del Acuerdo de París y jugó un papel clave en su negociación. El Acuerdo de París es un acuerdo internacional para reducir las emisiones de gases de efecto invernadero y mantener el aumento de la temperatura global muy por debajo de los 2 grados centígrados.</p>
         </div>
 
         <!-- Controles del carrusel -->
