@@ -156,8 +156,7 @@ $cards = [
             </div>
             <div class="box__footer">
                 <h2>Soluciones</h2>
-                <a href="https://www.google.com">APIS empleadas</a>
-                <a href="#">API SPORTS</a>
+                <a href="https://www.google.com">Widgets empleados</a>
             </div>
 
             <div class="box__footer">
